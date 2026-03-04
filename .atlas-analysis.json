@@ -1,0 +1,95 @@
+{
+  "projectType": "cli-tool",
+  "projectName": "Telegram Bot Guider",
+  "projectDescription": "A Telegram bot that helps users navigate to restaurants in Barcelona using metro and walking routes with accessibility support.",
+  "theme": "palm",
+  "primaryColor": "#0066CC",
+  "lightColor": "#4D94FF",
+  "darkColor": "#003D7A",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "installation",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "user-guide/bot-commands",
+              "user-guide/finding-restaurants",
+              "user-guide/navigation",
+              "user-guide/accessibility"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/setup-telegram-bot",
+              "guides/configuration",
+              "guides/troubleshooting"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Modules",
+            "pages": [
+              "api/overview",
+              "api/restaurants",
+              "api/metro",
+              "api/city",
+              "api/bot"
+            ]
+          },
+          {
+            "group": "Data Structures",
+            "pages": [
+              "api/data-structures/restaurant",
+              "api/data-structures/station",
+              "api/data-structures/access",
+              "api/data-structures/edge"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Restaurant search with logical and fuzzy matching",
+    "Barcelona metro graph generation",
+    "Combined city and metro pathfinding",
+    "Accessibility support for special access requirements",
+    "Route visualization with time estimates",
+    "Telegram bot interface with location sharing"
+  ],
+  "publicApiSurface": [
+    "/start - Initialize bot conversation",
+    "/help - Show available commands",
+    "/author - Show project authors",
+    "/find <query> - Search for restaurants",
+    "/info <number> - Show restaurant details",
+    "/guide <number> - Display route to restaurant",
+    "/time <number> - Calculate travel time",
+    "/accessibility <yes/no> - Set accessibility requirements",
+    "restaurants.read() - Read restaurants from CSV",
+    "restaurants.find_logic() - Search with logical operators",
+    "restaurants.get_restaurants() - Get filtered restaurant list",
+    "metro.get_metro_graph() - Generate metro graph",
+    "metro.read_stations() - Read station data",
+    "metro.read_accesses() - Read access data",
+    "city.get_city_graph() - Generate combined city graph",
+    "city.find_path() - Find shortest path",
+    "city.plot_path() - Visualize route",
+    "city.get_osmnx_graph() - Get street graph"
+  ]
+}
